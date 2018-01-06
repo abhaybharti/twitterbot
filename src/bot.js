@@ -1,6 +1,5 @@
 const Twit = require('twit')
 const config = require('./config')
-var TinyURL = require('tinyurl');
 var schedule = require("node-schedule");
 
 const bot = new Twit(config)
@@ -69,8 +68,8 @@ function quoteFromArray(){
 
 
 var rule = new schedule.RecurrenceRule();
-	//rule.minute = 40;
-	rule.second = 2;
+	rule.minute = 60;
+	
 var jj = schedule.scheduleJob(rule, function(){
     bot.post('statuses/update', {
 	  status: quoteFromArray()
