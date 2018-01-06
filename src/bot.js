@@ -69,8 +69,8 @@ function quoteFromArray(){
 
 
 var rule = new schedule.RecurrenceRule();
-	rule.minute = 60;
-	
+	//rule.minute = 40;
+	rule.second = 2;
 var jj = schedule.scheduleJob(rule, function(){
     bot.post('statuses/update', {
 	  status: quoteFromArray()
