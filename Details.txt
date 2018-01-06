@@ -1,8 +1,1 @@
-https://thebuddhatree.blogspot.com
 
-Consumer Key (API Key) : 7XSE0ulSIE6i110HEX308JW8m
-Consumer Secret (API Secret) : jICrchYaNa6HngiNkjkpHXvIovenbrYk9sykyryNwXK76hsrmR
-Access Token : 2467691222-xYbrtcDLGYBMS2ESHa4wUQf6BCsHiYkCTGeWFlS
-Access Token Secret ; UxPvLgFurItwKRj8N61nMbi8OEVWghckiNUkxWVyLjMzU
-Owner	Buddha_Tree
-Owner ID	2467691222
