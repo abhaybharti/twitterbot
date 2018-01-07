@@ -1,4 +1,4 @@
 const tweetblog = require('./tweet-bot')
 
-tweetblog()
-setInterval(tweetblog, 3600000)
+//tweetblog()
+setInterval(tweetblog, 14200000)
