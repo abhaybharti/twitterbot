@@ -1,1 +1,36 @@
 
+now -e CONSUMER_KEY=@ds-twit-key -e CONSUMER_SECRET=@ds-twit-secret -e ACCESS_TOKEN=@ds-twit-access  -e ACCESS_TOKEN_SECRET=@ds-twit-access-secret
+
+now secrets add ds-twit-key 7XSE0ulSIE6i110HEX308JW8m
+now secrets add ds-twit-secret jICrchYaNa6HngiNkjkpHXvIovenbrYk9sykyryNwXK76hsrmR
+now secrets add ds-twit-access 2467691222-xYbrtcDLGYBMS2ESHa4wUQf6BCsHiYkCTGeWFlS
+now secrets add ds-twit-access-secret UxPvLgFurItwKRj8N61nMbi8OEVWghckiNUkxWVyLjMzU
+
+
+{
+  "name": "twitterbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+	"deploy": "now -e CONSUMER_KEY=@ds-twit-key -e CONSUMER_SECRET=@ds-twit-secret -e ACCESS_TOKEN=@ds-twit-access  -e ACCESS_TOKEN_SECRET=@ds-twit-access-secret"
+  },
+  "now": {
+    "alias": "tweet-bot-playground",
+    "files": [
+      "src",
+      "index.js"
+    ]
+	},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv": "^2.0.0",
+    "dotenv": "^4.0.0",
+    "node-schedule": "^1.2.5",
+    "twit": "^2.2.9"
+  }
+}
+
+
